@@ -185,11 +185,11 @@ int main(int argc, char** argv)
 		
 		if ((num % 2) == 0) {
 			pushVetor(pilhaPar, num);
-			aux = num;
 		} else {
 			pushLista(pilhaImpar, num);
-			aux = num;
-		}		
+		}
+		
+		aux = num;
 	}
 	limpaTela();
 	
@@ -220,6 +220,6 @@ int main(int argc, char** argv)
 	//LIMPA VETOR E LISTA ENCADEADA
 	freePilhaVetor(pilhaPar);
 	freePilhaLista(pilhaImpar);
-		
+	
 	return 0;
 }
